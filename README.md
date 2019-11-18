@@ -1,6 +1,8 @@
+![readme coding image](images/readme_image.jpeg)
+
 # Final Integrated Project
 
-This website will showcase my experiences and what I've learned so far in the first semeseter of Interactive Media Design program. While also explaining my plans for this website throughout college and career path after Fanshawe.
+This website will showcase my experiences and what I've learned so far in the first semester of Interactive Media Design program. While also explaining my plans for this website throughout college and career path after Fanshawe.
 
 ### Getting Started
 This is a basic HTML and CSS build. for more information about these, go to: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn)
