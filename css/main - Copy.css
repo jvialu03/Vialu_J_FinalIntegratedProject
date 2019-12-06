@@ -97,6 +97,37 @@ body {
 
 /*-- Close About --*/
 
+/*-- Open Contact --*/
+
+.contactHero {
+	background-color: #1b1b1b;
+	width: 920px;
+	height: 250px;
+	margin: 40px 20px 0 20px;
+}
+
+.contactContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 80px 20px 40px 20px;
+}
+
+.contactSection {
+	background-color: #1b1b1b;
+	width: 410px;
+	height: 300px;	
+}
+
+.socialMedia {
+	background-color: #1b1b1b;
+	width: 411px;
+	height: 300px;
+	margin-left: auto;
+}
+
+/*-- Close Contact --*/
+
 /*-- Open Footer --*/
 
 .mainFooter {
