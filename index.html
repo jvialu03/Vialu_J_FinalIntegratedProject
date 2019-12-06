@@ -1,30 +1,35 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Web Page</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Jairus - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
-	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
-        <section id="productImages">
-        	<section class="productImg"><p>Product Image</p></section><!--end productImg1-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg2-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg3-->
-        </section><!--end productImages-->
-        <section id="contentAreaBig">
-        	<p>Content Area</p>
-        </section>
-        <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
+    <section class="topBar"></section>
+    <div class="container"><!-- Open Container -->  
+        <header class="mainHeader"><!-- open header -->
+            <div class="logoHeader">Logo</div>
+            <nav class="mainNav">Main Nav</nav>
+        </header><!-- close header -->
+
+        <main>
+            <section class="hero"><!-- open hero -->
+                <p>Full width image with text</p>
+            </section><!-- close hero -->
+            
+            <section class="homeImages"><!-- open resources -->
+                <section class="iLove"></section>
+                <section class="web"></section>
+                <section class="dev"></section>
+            </section><!-- close resources -->
+        </main>
+
+        <footer class="mainFooter"><!-- open footer -->
+            <div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
+            
             <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
-<script src="js/main.js"></script>    
+        </footer><!-- close footer -->
+    </div><!-- close container -->
 </body>
 </html>
