@@ -24,6 +24,9 @@ body {
 	width: 200px;
 	height: 100px;
 	margin: 60px 0px 40px 20px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
 }
 
 .mainNav {
@@ -32,6 +35,38 @@ body {
 	margin-top: 60px;
 	margin-right: 20px;
 	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav {
+	width: 378px;
+  	list-style-type: none;
+  	text-align: center;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	color: #EFEFEF;
+	display: inline-block;
+	padding: 6px 6px;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+.nav a:hover {
+	color: #C1272C;
+}
+
+.nav .current {
+	background-color: #C1272C;
 }
 
 /*-- Open Index --*/
