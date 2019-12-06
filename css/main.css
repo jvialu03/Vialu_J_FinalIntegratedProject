@@ -1,257 +1,156 @@
-@charset "UTF-8";
-/* CSS Document */
-
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-p
-{
-	color: #fff;
-	line-height: 100px;
-	background: #000;
-	text-align: center;
-	margin: 0;
+body {
+	font-family: Courier New, Halvetica, sans-serif;
 }
 
-/*basic reset*/
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
-
-div,p,body,header,footer,section,article,nav 
-{ 
-	margin: 0; 
-	padding: 0; 
-}	
-
-img 
-{ 
-	border: none; /*Remove border if image is a link*/
-	margin: 0; 
-	padding: 0; 
-}
-
-/*html selectors*/
-
-body 
-{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	color: #333;
-}
-
-
-/*a:link is for not visited(standard unclicked link), 
-a:visited is for visited, and just a applies to both.*/
-/*a will also style anchor links*/
-
-a:link, a:visited 
-{ 
- 	text-decoration:none; 	
-}
-
-a:hover, a:active 
-{ 
-	text-decoration:none; 
-}
-
-/*hide elements from browser but show for doc outline*/
-
-.hidden
-{
-	display: none;
-}
-
-/*section is block level and no width specidied therefore stretches full screen*/
-#topBar
-{
-	background-color: #000;
+.topBar {
+	background-color: #C1272C;
 	height: 20px;
 }
 
-/*Site Container*/
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
-
-#siteContainer 
-{
+.container {
 	margin: 0 auto;
-	width: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 960px;
+	background-color: #f5f3f6;
 }
 
-/*This is a flex container*/
-#mainHeader
-{
-	margin-top: 40px;
-	padding-bottom: 40px;
+.mainHeader {
+	background-color: #1b1b1b;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
-	border-bottom: solid 1px #DDD;
+	justify-content: flex-start;
 }
 
-/*This is a flex item*/
-#logo
-{
+.logoHeader {
 	width: 200px;
+	height: 100px;
+	margin: 60px 0px 40px 20px;
 }
 
-/*This is also a flex item*/
-/*We use margin left auto to send it all the way to the right*/
-#mainNav 
-{
+.mainNav {
+	width: 378px;
+	height: 100px;
+	margin-top: 60px;
+	margin-right: 20px;
 	margin-left: auto;
-	width: 500px;
 }
 
-#promo 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+/*-- Open Index --*/
+
+.hero {
+	background-color: #1b1b1b;
+	width: 920px;
+	height: 300px;
+	margin: 30px 20px 0 20px;
+}
+
+.homeImages {
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: space-between;
+	margin: 80px 20px 40px 20px;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
+.iLove, .web, .dev {
+	background-color: #1b1b1b;
+	width: 280px;
+	height: 251px;
 }
 
-#promoText 
-{
+/*-- Close Index --*/
+
+/*-- Open About --*/
+
+.aboutMe {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 40px;
+}
+
+.mainImg {
+	background-color: #1b1b1b;
 	width: 600px;
+	height: 251px;
+	margin-left: 20px;
 }
 
-#promoImage 
-{
-	margin-left: auto;
+.aboutTxt {
+	background-color: #1b1b1b;
 	width: 280px;
+	height: 251px;
+	margin-left: auto;
+	margin-right: 20px;
 }
 
-#productInfo 
-{
-	margin-top: 40px;
+.aboutContent {
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	justify-content: space-between;
+	margin: 80px 20px 40px 20px;
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
-
-.productDesc 
-{
+.codingImg, .codingTxt, .designImg, .designTxt {
+	background-color: #1b1b1b;
 	width: 200px;
+	height: 300px;
 }
 
-#mainFooter 
-{
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
+/*-- Close About --*/
 
-#footerNav 
-{
-	width: 500px;
-}
+/*-- Open Contact --*/
 
-#copyRight 
-{
-	margin-left: auto;
-	width: 310px;
-}
-
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
-
-#contentCon {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
-{
-	line-height: 630px;
-}
-
-#content1 
-{
-	width: 440px;
-}
-
-#content2 
-{
-	margin-left: auto;
-	width: 440px;
-}
-
-/*Page 3*/
-
-#productImages 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
-}
-
-/*Get rid of this, here just to give different height*/
-#productImages p
-{
-	line-height: 250px;
-}
-
-.productImg 
-{
-	width: 280px;
-}
-
-
-#contentAreaBig
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
-}
-
-#promoImageBig
-{
+.contactHero {
+	background-color: #1b1b1b;
 	width: 920px;
+	height: 250px;
+	margin: 40px 20px 0 20px;
 }
 
+.contactContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 80px 20px 40px 20px;
+}
 
-/*Page 4*/
-
-.productDescLargeLeft 
-{
+.contactSection {
+	background-color: #1b1b1b;
 	width: 410px;
+	height: 300px;	
 }
 
-.productDescLargeRight 
-{
-	width: 410px;
+.socialMedia {
+	background-color: #1b1b1b;
+	width: 411px;
+	height: 300px;
+	margin-left: auto;
 }
+
+/*-- Close Contact --*/
+
+/*-- Open Footer --*/
+
+.mainFooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 960px;
+	height: 178px;
+}
+
+#footerNav {
+	background-color: #C1272C;
+	width: 500px;
+	height: 100px;
+	margin: 35px 0 40px 20px;
+}
+
+#copyRight {
+	background-color: #C1272C;
+	width: 310px;
+	height: 100px;
+	margin: 35px 20px 40px auto;
+}
+
+/*-- Close Footer --*/
 
