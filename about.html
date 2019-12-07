@@ -7,10 +7,14 @@
 </head>
 <body>
     <div class="container"><!-- Open Container --> 
-        <section class="topBar"></section> 
+        <h1 class="hidden">Jairus - About</h1>
+        <section class="topBar">
+            <h2 class="hidden">Top Bar</h2>
+        </section> 
         <header class="mainHeader"><!-- open header -->
             <div class="logoHeader"><img src="images/logo.png"></div>
             <nav class="mainNav">
+                <h2 class="hidden">Header Navigation</h2>
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a class="current" href="about.html">About</a></li>
@@ -21,15 +25,39 @@
 
         <main>
             <section class="aboutMe"><!-- open hero -->
-                <section class="mainImg"></section>
-                <section class="aboutTxt"></section>
+                <h2 class="hidden">About Page</h2>
+                <section class="mainImg">
+                    <h2 class="hidden">Main Image</h2>
+                    <img src="images/me.jpg" alt="image of me">
+                </section>
+
+                <section class="aboutTxt">
+                    <h2 class="hidden">About Me</h2>
+                    <p>I’m <span id="redName">Jairus</span>, an interactive media design student at Fanshawe College. I am currently in my first semester learning the basics and the ways around web dev and design. My plan is to graduate and work in the industry doing what I love.</p>
+                </section>
             </section><!-- close hero -->
             
             <section class="aboutContent"><!-- open resources -->
-                <section class="codingImg"></section>
-                <section class="codingTxt"></section>
-                <section class="designImg"></section>
-                <section class="designTxt"></section>
+                <h2 class="hidden">About Content</h2>
+                <section class="codingImg">
+                    <h2 class="hidden">Coding Image</h2>
+                    <img src="images/coding_img.jpg" alt="coding image">
+                </section>
+
+                <section class="codingTxt">
+                    <h2 class="hidden">Coding Info</h2>
+                    <p><span id="codingTitle">Coding</span><br> I’ve learned the basics of HTML and CSS such as semantic taggings, forms, selectors, box model, and layouts. A bit of script was also introduced through Python. Using the matplotlib plugin to come up with a data visualization.</p>
+                </section>
+
+                <section class="designImg">
+                    <h2 class="hidden">Designing Image</h2>
+                    <img src="images/design_img.jpg" alt="designing image">
+                </section>
+
+                <section class="designTxt">
+                    <h2 class="hidden">Designing Info</h2>
+                    <p><span id="designTitle">Designing</span><br> In terms of design, I’ve learned the principles and theories of design as well as the basics of photoshop and illustrator. Using all the tools to come up with logos, image blending, wireframes, and editing photos.</p>
+                </section>
             </section><!-- close resources -->
         </main>
 
@@ -43,7 +71,10 @@
                     </ul>
             </nav><!--end FooterNav-->
             
-            <div class="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <div class="copyRight">
+                <h2 class="hidden">Copyright</h2>
+                <p>© Copyright Jairus 2019</p>
+            </div><!--end Copyright-->
         </footer><!-- close footer -->
     </div><!-- close container -->
 </body>
