@@ -1,5 +1,14 @@
 body {
-	font-family: Courier New, Halvetica, sans-serif;
+	font-family: Helvetica, Ariel, sans-serif;
+	background-color: #C1272C;
+}
+
+a:link { 
+	text-decoration:none; 
+}
+
+.hidden {
+	display: none;
 }
 
 .topBar {
@@ -22,8 +31,7 @@ body {
 
 .logoHeader {
 	width: 200px;
-	height: 100px;
-	margin: 60px 0px 40px 20px;
+	margin: 40px 0px 40px 20px;
 	display: flex;
 	align-items: center;
   	justify-content: center;
@@ -31,51 +39,59 @@ body {
 
 .mainNav {
 	width: 378px;
-	height: 100px;
-	margin-top: 60px;
-	margin-right: 20px;
-	margin-left: auto;
+	margin: 40px 20px 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.nav {
-	width: 378px;
-  	list-style-type: none;
-  	text-align: center;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
+.mainNav ul {
+	list-style-type: none;
+  	padding: 0;
 }
 
-.nav li {
-	display: inline-block;
-}
-
-.nav a {
-	color: #EFEFEF;
-	display: inline-block;
-	padding: 6px 6px;
-	text-decoration: none;
+.mainNav ul li {
+	font-size: 16px;
 	font-family: sans-serif;
+  	display: inline;
+  	cursor: pointer;
+	margin-right: 60px; 
 }
 
-.nav a:hover {
-	color: #C1272C;
+.mainNav ul li a {
+	color: #f5f3f6;
+  	padding: 6px;
 }
 
-.nav .current {
+.mainNav ul li a:hover {
+	background-color: #C1272C;
+}
+
+.mainNav .current {
 	background-color: #C1272C;
 }
 
 /*-- Open Index --*/
 
 .hero {
-	background-color: #1b1b1b;
+	background-color: #f5f3f6;
+	border: solid #C1272C 1px;
 	width: 920px;
 	height: 300px;
 	margin: 30px 20px 0 20px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+}
+
+.hero h3 {
+	text-align: center;
+	font-size: 24pt;
+	padding: 0px 40px;
+}
+
+#redHighlight {
+	color: #C1272C;
 }
 
 .homeImages {
@@ -173,18 +189,50 @@ body {
 	height: 178px;
 }
 
-#footerNav {
+.footerNav {
 	background-color: #C1272C;
 	width: 500px;
 	height: 100px;
 	margin: 35px 0 40px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#copyRight {
+.footerNav ul {
+	list-style-type: none;
+  	padding: 0;
+  	width: 500px;
+  	text-align: center;
+  	display: flex;
+  	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footerNav ul li {
+	font-size: 16px;
+	font-family: sans-serif;
+  	display: inline;
+  	cursor: pointer;
+}
+
+.footerNav ul li a {
+	color: #f5f3f6;
+}
+
+.copyRight {
 	background-color: #C1272C;
 	width: 310px;
 	height: 100px;
 	margin: 35px 20px 40px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.copyRight p {
+	color: #f5f3f6;
 }
 
 /*-- Close Footer --*/

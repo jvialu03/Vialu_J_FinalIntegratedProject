@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <section class="topBar"></section>
-    <div class="container"><!-- Open Container -->  
+    <div class="container"><!-- Open Container --> 
+        <section class="topBar"></section> 
         <header class="mainHeader"><!-- open header -->
             <div class="logoHeader"><img src="images/logo.png"></div>
             <nav class="mainNav">
@@ -34,9 +34,16 @@
         </main>
 
         <footer class="mainFooter"><!-- open footer -->
-            <div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
+            <nav class="footerNav"><!-- open footerNav -->
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav><!--end FooterNav-->
             
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <div class="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
         </footer><!-- close footer -->
     </div><!-- close container -->
 </body>
