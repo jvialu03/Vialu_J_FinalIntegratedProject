@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <section class="topBar"></section>
     <div class="container"><!-- Open Container -->  
+        <h1 class="hidden">Jairus</h1>
+        <section class="topBar"><h2 class="hidden">Top Bar</h2></section>
         <header class="mainHeader"><!-- open header -->
-            <div class="logoHeader"><img src="images/logo.png"></div>
+            <div class="logoHeader"><img src="images/logo.png" alt="jairus logo" width="180" height="62"></div>
             <nav class="mainNav">
-                <ul class="nav">
+                <h2 class="hidden">Header Navigation</h2>
+                <ul>
                     <li><a class="current" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -21,20 +23,44 @@
 
         <main>
             <section class="hero"><!-- open hero -->
-                <p>Full width image with text</p>
+                <h2 class="hidden">Homepage</h2>
+                <h3><span id="redHighlight">Hello there,</span><br> welcome to my resume/portfolio website. This build showcases what I’ve learned through the first semester of the Interactive Media Design program, while also going over a little bit about myself and my plans for the future.
+                </h3>
             </section><!-- close hero -->
             
             <section class="homeImages"><!-- open resources -->
-                <section class="iLove"></section>
-                <section class="web"></section>
-                <section class="dev"></section>
+                <h2 class="hidden">Homepage Images</h2>
+                <section class="iLove">
+                    <h3 class="hidden">I Love Image</h3>
+                    <img src="images/ilove_pic.jpg" alt="i love keycaps pic">
+                </section>
+
+                <section class="web">
+                    <h3 class="hidden">Web Image</h3>
+                    <img src="images/web_pic.jpg" alt="web keycaps image">
+                </section>
+
+                <section class="dev">
+                    <h3 class="hidden">Dev Image</h3>
+                    <img src="images/dev_pic.jpg" alt="dev keycaps image">
+                </section>
             </section><!-- close resources -->
         </main>
 
         <footer class="mainFooter"><!-- open footer -->
-            <div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
+            <nav class="footerNav"><!-- open footerNav -->
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav><!--end FooterNav-->
             
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <div class="copyRight">
+                <h2 class="hidden">Copyright</h2>
+                <p>© Copyright Jairus 2019</p>
+            </div><!--end Copyright-->
         </footer><!-- close footer -->
     </div><!-- close container -->
 </body>
