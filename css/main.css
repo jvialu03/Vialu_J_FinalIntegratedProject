@@ -2,6 +2,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13pt;
 	background-color: #C1272C;
+	color: #4e4e4e;
 }
 
 a:link { 
@@ -76,10 +77,11 @@ a:link {
 
 .hero {
 	background-color: #f5f3f6;
-	border: solid #C1272C 1px;
-	width: 920px;
+	border-top: solid #C1272C 1px;
+	border-bottom: solid #C1272C 1px;
+	width: 960px;
 	height: 300px;
-	margin: 30px 20px 0 20px;
+	margin-top: 30px;
 	display: flex;
   	flex-direction: column;
   	justify-content: space-around;
@@ -204,18 +206,41 @@ a:link {
 }
 
 .contactSection {
-	background-color: #1b1b1b;
+	background-color: #f5f3f6;
+	border-right: solid 1px #C1272C;
 	width: 410px;
 	height: 300px;	
 }
 
+.contactSection h2 {
+	font-size: 18pt;
+	color: #C1272C;
+	padding-bottom: 10px;
+}
+
+#contactText {
+	padding-right: 60px;
+}
+
 .socialMedia {
-	background-color: #1b1b1b;
+	background-color: #f5f3f6;
 	width: 411px;
 	height: 300px;
 	margin-left: auto;
 }
 
+.socialMedia h3 {
+	font-size: 18pt;
+	color: #C1272C;
+}
+
+.socialMedia p a {
+	color: #1b1b1b;
+}
+
+.socialLinks{
+	text-decoration: underline;
+}
 /*-- Close Contact --*/
 
 /*-- Open Footer --*/

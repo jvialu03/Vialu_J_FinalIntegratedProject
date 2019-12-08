@@ -6,11 +6,15 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <div class="container"><!-- Open Container -->  
-        <section class="topBar"></section>
+    <div class="container"><!-- Open Container --> 
+        <h1 class="hidden">Jairus - Contact</h1> 
+        <section class="topBar">
+            <h2 class="hidden">Top Bar</h2>
+        </section>
         <header class="mainHeader"><!-- open header -->
             <div class="logoHeader"><img src="images/logo.png"></div>
             <nav class="mainNav">
+                <h2 class="hidden">Header Navigation</h2>
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -21,13 +25,16 @@
 
         <main>
             <section class="contactHero"><!-- open hero -->
-                <p>Full width image with text</p>
+                <h2 class="hidden">Contact Page</h2>
+                <img src="images/pc_setup.jpg" alt="pc setup hero">
             </section><!-- close hero -->
             
             <section class="contactContent"><!-- open contactContent -->
+                <h2 class="hidden">Contact Content</h2>
                 <section class="contactSection">
+                    <h2>Contact Me</h2>
                     <div id="contactText">
-                        <p>If you have any comments or message for me or my website, feel free to fill up the information below</p><br>
+                        <p>If you have any comments or message for me or my website, feel free to fill up the form below.</p><br>
                     </div>
                     <form id="contactForm" action="form.php" method="post">
 
@@ -38,12 +45,20 @@
                         <input type="email" required size="40"><br><br>
 
                         <label style="color: #C1272C">Comments</label><br>
-                        <textarea required cols="40" rows="3"></textarea><br><br>
+                        <textarea required cols="40" rows="3" style="max-width: 400px; max-height: 90px;"></textarea><br><br>
 
                         <input type="submit" value="Submit">
                     </form>
                 </section>
-                <section class="socialMedia"></section>
+                <section class="socialMedia">
+                    <h2 class="hidden">Contact and Social Media Info</h2>
+                    <h3>Get in Touch</h3><br><br>
+                    <p>226-700-6049</p>
+                    <p>jvialu03@gmail.com</p><br><br>
+                    <h3>Follow Me</h3><br><br>
+                    <p class="socialLinks"><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                    <p class="socialLinks"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                </section>
             </section><!-- close contactContent -->
         </main>
 

@@ -1,4 +1,4 @@
-![My logo](images/Vialu_Jairus_Logo.jpg)
+![My logo](images/readme_img.jpg)
 
 # Final Integrated Project
 
